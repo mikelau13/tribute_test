@@ -1,0 +1,21 @@
+{
+  "name": "tribute.ca-test-automation",
+  "version": "1.0.0",
+  "description": "nightwatch test automation for tribute.ca",
+  "scripts": {
+    "test": "nightwatch --config nightwatch.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pend": "^1.2.0"
+  },
+  "devDependencies": {
+    "chromedriver": "^76.0",
+    "edgedriver": "^4.17134.0",
+    "geckodriver": "^1.14.1",
+    "iedriver": "^3.13.0",
+    "nightwatch": "^1.2.2",
+    "selenium-server": "^3.141.59"
+  }
+}
