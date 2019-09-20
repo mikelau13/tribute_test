@@ -2,3 +2,5 @@ node_modules
 selenium-server.log
 screenshots/*
 reports/*
+local.log
+keys/*

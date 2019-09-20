@@ -12,6 +12,11 @@ note: I got error message when doing npm install, I needed to install pend first
 npm install pend
 ```
 
+
+### Key files
+You will need the keys to run, the keys are in the ./keys/ and not committed to github for security resason.
+
+
 ### Basic Commands to Start
 
 To execute all testes
@@ -108,3 +113,17 @@ sites.js->env
 Logs/reports are in the /reports/ folder.
 
 ---
+
+**BrowserStack Integration**
+
+To run local runner, first enable it in nightwatch.config.js:
+```
+'browserstack.local': true,
+```
+
+Then run command line:
+```
+node ./scripts/local.runner.js -c nightwatch.config.js
+```
+
+The keys are in the ./keys/browserstack.json, not commited to github.

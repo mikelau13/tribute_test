@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "nightwatch test automation for tribute.ca",
   "scripts": {
-    "test": "nightwatch --config nightwatch.conf.js"
+    "test": "nightwatch --config nightwatch.conf.js -e chrome,firefox,ie"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserstack-local": "^1.4.2",
     "pend": "^1.2.0"
   },
   "devDependencies": {
