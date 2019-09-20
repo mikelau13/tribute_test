@@ -39,9 +39,8 @@ Chrome is the default browser, however if you want to execute in a different bro
 npm run test --env firefox
 ```
 
-The available environments are: chrome, firefox, ie, edge
+The available environments are: chrome, firefox, ie, edge, safari
 
-Note: Safari has to be on Mac, need to check BrowserStack.com about how to run.
 
 
 ---

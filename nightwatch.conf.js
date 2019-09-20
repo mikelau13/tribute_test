@@ -13,7 +13,9 @@ nightwatch_config = {
     "src_folders": [
       "tests",
       "tests/showtimes",
-      "tests/movies"
+      "tests/movies",
+      "tests/movies/dvd",
+      "tests/netflix"
     ],
     "output_folder": "./reports/", // reports (test outcome) output by nightwatch
     "page_objects_path": "PageObjects", // page object folder
