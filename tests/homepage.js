@@ -6,7 +6,7 @@ const siteUrl = `https://${siteSettings.env}.${siteSettings.url}`;
 module.exports = {
     tags: ['desktop'], 
     before: function (browser) {
-        browser.resizeWindow(1024, 3000);
+        //browser.resizeWindow(1024, 3000);
         //screenshotsPath = imgpath(browser);
     },
     'Tribute.ca(Desktop)|Homepage': function (browser) {

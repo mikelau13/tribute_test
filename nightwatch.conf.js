@@ -11,19 +11,20 @@ const timeStamp = `${dateTemp.getFullYear()}-${("0" + (dateTemp.getMonth() + 1))
 // we use a nightwatch.conf.js file so we can include comments and helper functions
 nightwatch_config = {
     "src_folders": [
-      "tests",
-      "tests/showtimes",
-      "tests/movies",
-      "tests/movies/dvd",
-      "tests/netflix"
+        "tests/all-pages-screenshots.js"
+    //  "tests/all-landing-pages.js",
+    //   "tests/showtimes",
+    //   "tests/movies",
+    //   "tests/movies/dvd",
+    //   "tests/netflix"
     ],
     "output_folder": "./reports/", // reports (test outcome) output by nightwatch
     "page_objects_path": "PageObjects", // page object folder
     "selenium": {
-        "start_process": false, // for BrowserStack, set to false; otherwise for selenium local, set to true
+        "start_process": true, // for BrowserStack, set to false; otherwise for selenium local, set to true
         "server_path": seleniumServer.path,
-        "host": "hub-cloud.browserstack.com", // otheriwse, use 127.0.0.0 for local selenium
-        "port": 80, // otherwise, use 4444
+        "host": "127.0.0.0", // for browserstack use hub-cloud.browserstack.com; otheriwse, use 127.0.0.0 for local selenium
+        "port": 4444, // for browserstack use port 80; otherwise for localhost use 4444
         "cli_args": {
           "webdriver.chrome.driver" : chromedriver.path,
           "webdriver.edge.driver" : edgedriver.path,
@@ -40,10 +41,11 @@ nightwatch_config = {
         'browserstack.user': browserstackKey.user,
         'browserstack.key': browserstackKey.key,
         'browserstack.debug': true,
-        //'browserstack.console': 'errors', // Console Logs are enabled with log level set to 'errors' by default. To set different log levels, you need to use the capability browserstack.console with values 'disable', 'errors', 'warnings', 'info' or 'verbose'
+        'browserstack.console': 'errors', // Console Logs are enabled with log level set to 'errors' by default. To set different log levels, you need to use the capability browserstack.console with values 'disable', 'errors', 'warnings', 'info' or 'verbose'
         'browserstack.networkLogs': true, // Network Logs are disabled by default. To enable Network Logs use the capability browserstack.networkLogs with the value 'true'
         'browserstack.video': true, //  Video recording increases test execution time slightly. 
         'browserstack.local': false, // use this if you want to run on localhost instead of on BrowserStack cloud
+        'elementScrollBehavior': 1,
     },
     "test_settings": {  // to run in different environment in parallel, example command "-e default,chrome"
         "default": {
@@ -93,7 +95,21 @@ nightwatch_config = {
             "globals": {
               "env": "dev"
             }
-          }                      
+        },
+        "iphone": {
+            "desiredCapabilities": {
+                "browserName":"iPhone",
+                'device' : 'iPhone 6',
+                'realMobile' : 'true',
+            }
+        },
+        "android": {
+            "desiredCapabilities": {
+                "browserName":"android",
+                'device' : 'Samsung Galaxy S6',
+                'realMobile' : 'true',
+            }
+        }
     }
 }
 
