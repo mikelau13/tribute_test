@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "nightwatch test automation for tribute.ca",
   "scripts": {
-    "test": "nightwatch --config nightwatch.conf.js -e chrome",
-    "browserstack": "nightwatch --config nightwatch.conf.js -e iphone,android"
+    "test": "nightwatch --config nightwatch.conf.js -e ie",
+    "browserstack": "nightwatch --config nightwatch.conf.js -e android"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,7 @@
     "pend": "^1.2.0"
   },
   "devDependencies": {
-    "chromedriver": "^76.0",
+    "chromedriver": "^76.0.1",
     "edgedriver": "^4.17134.1",
     "geckodriver": "^1.18.0",
     "iedriver": "^3.13.0",

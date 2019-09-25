@@ -1,6 +1,6 @@
 const siteSettings = require('../configs/sites.js');
 // const imgpath = require('../nightwatch.conf').default.imgpath;
-const siteUrl = `https://${siteSettings.env}.${siteSettings.url}`;
+const siteUrl = `${siteSettings.protocol}://${siteSettings.env}.${siteSettings.url}`;
 //let screenshotsPath;
 
 module.exports = {

@@ -21,10 +21,10 @@ nightwatch_config = {
     "output_folder": "./reports/", // reports (test outcome) output by nightwatch
     "page_objects_path": "PageObjects", // page object folder
     "selenium": {
-        "start_process": true, // for BrowserStack, set to false; otherwise for selenium local, set to true
+        "start_process": false, // for BrowserStack, set to false; otherwise for selenium local, set to true
         "server_path": seleniumServer.path,
-        "host": "127.0.0.0", // for browserstack use hub-cloud.browserstack.com; otheriwse, use 127.0.0.0 for local selenium
-        "port": 4444, // for browserstack use port 80; otherwise for localhost use 4444
+        "host": "hub-cloud.browserstack.com", // for browserstack use hub-cloud.browserstack.com; otheriwse, use 127.0.0.0 for local selenium
+        "port": 80, // for browserstack use port 80; otherwise for localhost use 4444
         "cli_args": {
           "webdriver.chrome.driver" : chromedriver.path,
           "webdriver.edge.driver" : edgedriver.path,
