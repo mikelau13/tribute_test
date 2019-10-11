@@ -114,6 +114,7 @@
     {"description": "All Posters","url": "/movies/posters/search/", "titleSearch": ""},
     {"description": "Search Posters by Title","url": "/movies/posters/search?title=Q", "titleSearch": ""},
     {"description": "Recent News","url": "/news/", "titleSearch": ""},
+    {"description": "News Category","url": "/news/category/box-office-news/", "titleSearch": ""},
     {"description": "News Article","url": "/news/claire-foy-excels-in-the-girl-in-the-spiders-web/2018/11/08/", "titleSearch": ""},
     {"description": "Photo Gallery Landing","url": "/news/photo-galleries/", "titleSearch": "Photo;Celebrity"},
     {"description": "Photo Gallery","url": "/news/photo-galleries/actors-who-have-been-typecast/", "titleSearch": "Celebrity"},
@@ -131,6 +132,7 @@
     {"description": "General Search - Province","url": "/search/states/ario", "titleSearch": ""},
     {"description": "General Search - Cinemas","url": "/search/all/cineplex?src=quicksearch", "titleSearch": "Search"},
     {"description": "Movies in a City 1","url": "/toronto-movies-on/", "titleSearch": ""},
-    {"description": "Movies in a City 2","url": "/alberta-movies-ab/", "titleSearch": ""},
-    {"description": "Special Page 1","url": "/junoawards/", "titleSearch": ""}
+    {"description": "Movies in a City 2","url": "/grande-prairie-movies-ab/", "titleSearch": ""},
+    {"description": "Special Page 1","url": "/junoawards/", "titleSearch": ""},
+    {"description": "View Trailers","url": "/player/?id=25445&category=Trailer/", "titleSearch": ""}
 ]
