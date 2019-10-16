@@ -16,6 +16,12 @@ npm install pend
 ### Key files
 You will need the keys to run, the keys are in the ./keys/ and not committed to github for security resason.
 
+```
+{
+    "user": "--insert your browserstack username--",
+    "key": "--insert your brwoserstack password--"
+}
+```
 
 ### Basic Commands to Start
 

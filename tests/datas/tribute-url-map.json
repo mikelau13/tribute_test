@@ -38,6 +38,7 @@
     {"description": "New this Week Landing","url": "/movies/now-playing/newthisweek/", "titleSearch": ""},
     {"description": "New this Week","url": "/movies/now-playing/all/all/newthisweek/", "titleSearch": ""},
     {"description": "New this Week by Language","url": "/movies/now-playing/en/all/newthisweek/", "titleSearch": ""},
+    {"description": "New this Week by Language & Location","url": "/movies/now-playing/en/all/newthisweek/ottawa-on/", "titleSearch": ""},
     {"description": "New this Week by Genre","url": "/movies/now-playing/fr/all/newthisweek/", "titleSearch": ""},
     {"description": "New this Week by Title","url": "/movies/now-playing/all/all/newthisweek/?t=a", "titleSearch": ""},
     {"description": "Coming Soon","url": "/movies/coming-soon/", "titleSearch": ""},
@@ -92,6 +93,7 @@
     {"description": "Person page by Movie","url": "/people/tom-hanks/1203/", "titleSearch": ""},
     {"description": "Person Videos","url": "/people/videos/tom-hanks/1203/", "titleSearch": ""},
     {"description": "Sign-up form","url": "/moviemail/", "titleSearch": ""},
+    {"description": "Newsletter Landing","url": "/newsletter/", "titleSearch": ""},
     {"description": "Newsletter","url": "/newsletter/892/", "titleSearch": ""},
     {"description": "Puzzle","url": "/puzzles/893", "titleSearch": ""},
     {"description": "Unsubscribe Link","url": "/moviemail/unsubscribemoviemail/", "titleSearch": ""},
@@ -134,5 +136,6 @@
     {"description": "Movies in a City 1","url": "/toronto-movies-on/", "titleSearch": ""},
     {"description": "Movies in a City 2","url": "/grande-prairie-movies-ab/", "titleSearch": ""},
     {"description": "Special Page 1","url": "/junoawards/", "titleSearch": ""},
-    {"description": "View Trailers","url": "/player/?id=25445&category=Trailer/", "titleSearch": ""}
+    {"description": "View Trailers","url": "/movietrailers/player/?watch=20897&category=Trailer", "titleSearch": ""},
+    {"description": "Advertise with Tribute","url": "/mediakit/", "titleSearch": ""}
 ]
