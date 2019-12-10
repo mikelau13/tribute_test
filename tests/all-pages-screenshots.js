@@ -18,6 +18,7 @@ module.exports = {
     tags: ['desktop'], 
     before: function (browser) {
         screenshotsPath = imgpath(browser);
+        browser.resizeWindow(480, 700);
     },
     'All url map': function (browser) {
         allUrls.forEach((eachPage) => {
