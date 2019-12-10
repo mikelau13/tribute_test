@@ -11,13 +11,14 @@ const timeStamp = `${dateTemp.getFullYear()}-${("0" + (dateTemp.getMonth() + 1))
 // we use a nightwatch.conf.js file so we can include comments and helper functions
 nightwatch_config = {
     "src_folders": [
-    //    "tests/movietrailers.test.js"
-        "tests/all-pages-screenshots.js"
+    //  "tests/movietrailers.test.js"
+    //  "tests/all-pages-screenshots.js"
     //  "tests/all-landing-pages.js",
-    //   "tests/showtimes",
-    //   "tests/movies",
-    //   "tests/movies/dvd",
-    //   "tests/netflix"
+    //  "tests/showtimes",
+    //  "tests/movies",
+    //  "tests/movies/dvd",
+    //  "tests/netflix"
+        "tests/fandango/findmatch.test.js"
     ],
     "output_folder": "./reports/", // reports (test outcome) output by nightwatch
     "page_objects_path": "PageObjects", // page object folder
@@ -67,7 +68,10 @@ nightwatch_config = {
         "chrome": {
             "desiredCapabilities": {
                 "browserName": "chrome",
-                "javascriptEnabled": true // turn off to test progressive enhancement
+                "javascriptEnabled": true, // turn off to test progressive enhancement
+                "chromeOptions": {
+                    w3c: false
+                }
             }
         },
         "firefox": {
