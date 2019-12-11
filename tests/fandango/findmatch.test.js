@@ -10,23 +10,14 @@ module.exports = {
     'Finding Fandango': function (browser) {
         allTheaters.forEach((eachTheater) => {
             browser.url(`https://www.fandango.com/${eachTheater.city}_${eachTheater.state}_movietimes`);
-            browser.waitForElementVisible('body');
+            //browser.waitForElementVisible('body');
             //browser.assert.containsText('.fd-theater__address-wrap', eachTheater.zip);
+            browser.expect.title().to.contain(`${eachTheater.city}_${eachTheater.state}`.toLowerCase());
+            browser.verify.containsText('.fd-showtimes', eachTheater.zip);
+            //browser.expect.element('.fd-showtimes').text.to.contain(eachTheater.zip);
+            //browser.expect.elements('div.fd-theater__address-wrap').count.to.equal(10);
+            //browser.expect.element('.fd-showtimes').to.have.attribute('href').which.contains('/aaron-and-cecile-goldman-theater-aavbj/theater-page');
             // browser.expect.element('#mainContent').to.be.present; 
-
-            // browser.getTitle(function(title) {
-            //     console.log(`${eachPage.description} - ${eachPage.url} - ${title}`);
-            // });
-            // browser.url(siteUrl + eachPage.url);
-            // if (eachPage.titleSearch) {
-            //     browser.getTitle(function(title) {
-            //         eachPage.titleSearch.split(';').forEach((eachSearch) => {
-            //             this.assert.ok(title.includes(eachSearch));
-
-            //         })
-            //     });
-            // }
-            //browser.saveScreenshot(`${screenshotsPath}/${eachPage.url.replace(/\//g, '_').replace(/\?/g, '_')}.png`)
         });
 
         browser.end();

@@ -51,7 +51,6 @@ nightwatch_config = {
     },
     "test_settings": {  // to run in different environment in parallel, example command "-e default,chrome"
         "default": {
-            "skip_testcases_on_fail": false,
             "screenshots": {
                 "enabled": true, // if you want to keep screenshots
                 "path": SCREENSHOT_PATH, // save screenshots here
